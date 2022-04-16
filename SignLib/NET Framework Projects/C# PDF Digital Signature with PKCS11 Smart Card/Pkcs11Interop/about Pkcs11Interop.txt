@@ -1,0 +1,21 @@
+Library Link: https://www.pkcs11interop.net/
+
+Quick facts
+Pkcs11Interop library:
+
+implements .NET wrapper for unmanaged PKCS#11 libraries
+is compatible with .NET Framework 2.0 (and higher), Mono, Xamarin and Silverlight5
+is open source and completely free for commercial use
+uses 100% managed and fully documented code
+contains code samples covering all methods of PKCS#11 API
+
+License (is open source and completely free for commercial use)
+Pkcs11Interop is available under the terms of the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+
+Source Code: https://github.com/Pkcs11Interop/Pkcs11Interop/releases/ 
+
+
+
+
+
+

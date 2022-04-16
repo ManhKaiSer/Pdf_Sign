@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "tHoef8aKtDs2C2L/eqf1RgIgcAlbaEDokx8XsgQANYPENAfp286CqO8YTm2Wo8Arf/SpV2ZyyEoTgGjR/cmCLA==",
+  "success": true,
+  "projectFilePath": "D:\\Demo\\pdfsyncfusion\\pdfsyncfusion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\syncfusion.compression.net.core\\20.1.0.48\\syncfusion.compression.net.core.20.1.0.48.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\syncfusion.licensing\\20.1.0.48\\syncfusion.licensing.20.1.0.48.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\syncfusion.pdf.net.core\\20.1.0.48\\syncfusion.pdf.net.core.20.1.0.48.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

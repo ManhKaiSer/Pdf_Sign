@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://ca.signfiles.com/RemoteSigner/RemoteSignature.asmx?wsdl" docRef="http://ca.signfiles.com/RemoteSigner/RemoteSignature.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://ca.signfiles.com/RemoteSigner/RemoteSignature.asmx" xmlns:q1="http://ca.signfiles.com/RemoteSigner/" binding="q1:RemoteSignatureSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://ca.signfiles.com/RemoteSigner/RemoteSignature.asmx" xmlns:q2="http://ca.signfiles.com/RemoteSigner/" binding="q2:RemoteSignatureSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

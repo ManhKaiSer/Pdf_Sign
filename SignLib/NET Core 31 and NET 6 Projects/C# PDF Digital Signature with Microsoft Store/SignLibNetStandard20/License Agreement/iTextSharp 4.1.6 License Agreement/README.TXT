@@ -1,0 +1,3 @@
+To insert digital signatures or making other actions to PDF files, SignLib library calls an external library named iTextSharp 4.1.6. iTextSharp 4.1.6 library is licensed under MPL / LGPLv2. The original library is available here: https://www.nuget.org/packages/iTextSharp-LGPL/
+
+The source code of the original iTextSharp 4.1.6 library and all changes are available here: http://www.signfiles.com/license/SignLibSrc.zip

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "vbxyu74PNnriW8iYU1veYsXlVRIffYLusPH/OM5Gy1YFrzOauX9umJ3+lfg4PlNOfO/n/QGERB5WLHhGCb8kKw==",
+  "success": true,
+  "projectFilePath": "D:\\Demo\\tupa_smartusb_test1\\tupa_smartusb_test1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,19 @@
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\PDF Digital Signature.exe
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\PDF Digital Signature.deps.json
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\PDF Digital Signature.runtimeconfig.json
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\PDF Digital Signature.runtimeconfig.dev.json
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\PDF Digital Signature.dll
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\PDF Digital Signature.pdb
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\Pkcs11Interop.NetStandard.dll
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\SignLib.dll
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\itextsharp.dll
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\bin\Debug\netcoreapp3.1\SignLib.xml
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.csproj.AssemblyReference.cache
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.AssemblyInfoInputs.cache
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.AssemblyInfo.cs
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.csproj.CoreCompileInputs.cache
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.csproj.CopyComplete
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.dll
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.pdb
+D:\Demo\SignLib\NET Core 31 and NET 6 Projects\C# PDF Digital Signature with PKCS11 Smart Card\PDF Digital Signature\obj\Debug\netcoreapp3.1\PDF Digital Signature.genruntimeconfig.cache

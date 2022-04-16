@@ -1,0 +1,8 @@
+Pkcs11Interop License
+----------------------
+
+Pkcs11Interop is available under the terms of the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0 
+Human friendly license summary is available at tldrlegal.com but the full license text always prevails: https://github.com/Pkcs11Interop/Pkcs11Interop/blob/3.2.0/LICENSE.md
+
+
+

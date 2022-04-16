@@ -1,0 +1,123 @@
+Changes added to iTextSharp 4.1.6
+---------------------------------
+
+The project was compiled with Visual Studio 2019 - target .NET Standard 2.0
+
+Some files was removed from compiled version because System.Drawing was not fully ported to .NET Standard 2.0
+<Compile Remove="iTextSharp\text\pdf\Barcode.cs" />
+<Compile Remove="iTextSharp\text\pdf\Barcode128.cs" />
+<Compile Remove="iTextSharp\text\pdf\Barcode39.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodeCodabar.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodeDatamatrix.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodeEAN.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodeEANSUPP.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodeInter25.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodePDF417.cs" />
+<Compile Remove="iTextSharp\text\pdf\BarcodePostnet.cs" />
+
+
+File: iTextSharp-4.1.6\iTextSharp\text\pdf\BaseFont.cs
+Explanation: The resources fonts are not found  
+
+Line:
+public const string RESOURCE_PATH = "iTextSharp.text.pdf.fonts.";
+Replaced with:
+public const string RESOURCE_PATH = "itextsharp.iTextSharp.text.pdf.fonts.";
+
+
+
+File: iTextSharp-4.1.6\iTextSharp\text\pdf\PdfStamperImp.cs
+Explanations: The producer may contain Unicode characters 
+
+Line: 
+producer = oldInfo.GetAsString(PdfName.PRODUCER).ToString();
+Replaced with:
+producer = oldInfo.GetAsString(PdfName.PRODUCER).ToUnicodeString();
+
+
+
+File: iTextSharp-4.1.6\iTextSharp\text\pdf\AcroFields.cs
+Explanations: Obtain the signature byte range.
+
+Added method:
+/// <summary>
+/// Added to obtain the signature byte range.
+/// </summary>
+/// <param name="name"></param>
+/// <returns></returns>
+public byte[] GetSignatureBytes(String name)
+{
+    try
+    {
+PdfDictionary v = GetSignatureDictionary(name);
+if (v == null)
+    return null;
+PdfString contents = (PdfString)PdfReader.GetPdfObject(v.Get(PdfName.CONTENTS));
+return contents.GetOriginalBytes();
+    }
+    catch
+    {
+throw new Exception("Invalid signature");
+    }
+}
+
+
+
+
+File: iTextSharp-4.1.6\iTextSharp\text\pdf\PdfSignatureAppearance.cs
+Explanations: ability to add the digital signature on all pages and timestamp signatures
+
+Added lines of code:
+public bool SignAllPages = false;
+public PdfStamperImp writer;
+public void PreClose() {
+PreClose(null,1);
+  }
+public void PreClose(Hashtable exclusionSizes, int noOfPages)
+  {
+
+ sigField.SetAppearance(PdfAnnotation.APPEARANCE_NORMAL, GetAppearance());
+
+    //signatures on all pages
+    if (SignAllPages == true)
+    {
+
+  for (int i = 1; i <= noOfPages; i++)
+  {
+//sigField.Page = pagen;
+//writer.AddAnnotation(sigField, pagen);
+
+sigField.Page = i;
+writer.AddAnnotation(sigField, i);
+  }
+    }
+    //one single page
+    else
+    {
+  sigField.Page = pagen;
+  writer.AddAnnotation(sigField, pagen);
+    }
+
+    
+    //sigField.Page = pagen;
+    //writer.AddAnnotation(sigField, pagen);
+}
+
+exclusionLocations = new Hashtable();
+
+
+File: iTextSharp-4.1.6\iTextSharp\text\pdf\PdfPKCS7.cs
+Explanations: ECDSA signature verification support
+
+Added lines of code: 
+//ecdsa algorithms
+algorithmNames["1.2.840.10045.2.1"] = "ECDSA"; //ec
+algorithmNames["1.2.840.10045.4.1"] = "ECDSA"; // ec withh sha
+algorithmNames["1.2.840.10045.4.3"] = "ECDSA"; //ec dsa
+algorithmNames["1.2.840.10045.4.3.2"] = "ECDSA"; // ec with sha256
+algorithmNames["1.2.840.10045.4.3.3"] = "ECDSA"; //ec with sha384
+algorithmNames["1.2.840.10045.4.3.4"] = "ECDSA"; //ec with sha512
+//algorithmNames["1.2.840.10045.3.1.7"] = "ECDSA"; // ecdsa
+
+
+

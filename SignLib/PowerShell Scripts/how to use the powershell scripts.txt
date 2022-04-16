@@ -1,0 +1,21 @@
+How to run the powershell script
+---------------------------------
+
+Note that SignLib.dll must be placed on a folder and the path must be added on the .ps1 file, as below:
+
+$DllPath = 'd:\SignLib.dll'
+[System.Reflection.Assembly]::LoadFrom($DllPath)
+
+
+#run the script file from command line: 
+
+#performing PDF digital signature
+powershell -executionPolicy bypass -file d:\signPdfFile.ps1 d:\test.pdf d:\signedFile.pdf
+
+#performing CAdES digital signature
+powershell -executionPolicy bypass -file d:\signInCAdESFormat.ps1 d:\test.pdf d:\signedFile.pdf.p7m
+
+#cerate an Office digital signature 
+powershell -executionPolicy bypass -file d:\signOfficeDocument.ps1 d:\test.docx d:\test[signed].docx
+
+

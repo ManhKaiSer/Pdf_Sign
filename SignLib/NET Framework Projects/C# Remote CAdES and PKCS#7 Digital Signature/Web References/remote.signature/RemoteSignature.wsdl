@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ca.signfiles.com/RemoteSigner/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ca.signfiles.com/RemoteSigner/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ca.signfiles.com/RemoteSigner/">
+      <s:element name="GetSigningCertificate">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSigningCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSigningCertificateResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoteSign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hashToSign" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="signatureAlgorithm" type="tns:HashAlgorithm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="HashAlgorithm">
+        <s:restriction base="s:string">
+          <s:enumeration value="SHA1" />
+          <s:enumeration value="SHA256" />
+          <s:enumeration value="SHA384" />
+          <s:enumeration value="SHA512" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RemoteSignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RemoteSignResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoteSignWithOid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hashToSign" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="signatureAlgorithmOID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoteSignWithOidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RemoteSignWithOidResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSigningCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSigningCertificate" />
+  </wsdl:message>
+  <wsdl:message name="GetSigningCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSigningCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoteSignSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoteSign" />
+  </wsdl:message>
+  <wsdl:message name="RemoteSignSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoteSignResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoteSignWithOidSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoteSignWithOid" />
+  </wsdl:message>
+  <wsdl:message name="RemoteSignWithOidSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoteSignWithOidResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RemoteSignatureSoap">
+    <wsdl:operation name="GetSigningCertificate">
+      <wsdl:input message="tns:GetSigningCertificateSoapIn" />
+      <wsdl:output message="tns:GetSigningCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoteSign">
+      <wsdl:input message="tns:RemoteSignSoapIn" />
+      <wsdl:output message="tns:RemoteSignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoteSignWithOid">
+      <wsdl:input message="tns:RemoteSignWithOidSoapIn" />
+      <wsdl:output message="tns:RemoteSignWithOidSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RemoteSignatureSoap" type="tns:RemoteSignatureSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSigningCertificate">
+      <soap:operation soapAction="http://ca.signfiles.com/RemoteSigner/GetSigningCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoteSign">
+      <soap:operation soapAction="http://ca.signfiles.com/RemoteSigner/RemoteSign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoteSignWithOid">
+      <soap:operation soapAction="http://ca.signfiles.com/RemoteSigner/RemoteSignWithOid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RemoteSignatureSoap12" type="tns:RemoteSignatureSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSigningCertificate">
+      <soap12:operation soapAction="http://ca.signfiles.com/RemoteSigner/GetSigningCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoteSign">
+      <soap12:operation soapAction="http://ca.signfiles.com/RemoteSigner/RemoteSign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoteSignWithOid">
+      <soap12:operation soapAction="http://ca.signfiles.com/RemoteSigner/RemoteSignWithOid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RemoteSignature">
+    <wsdl:port name="RemoteSignatureSoap" binding="tns:RemoteSignatureSoap">
+      <soap:address location="http://ca.signfiles.com/RemoteSigner/RemoteSignature.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RemoteSignatureSoap12" binding="tns:RemoteSignatureSoap12">
+      <soap12:address location="http://ca.signfiles.com/RemoteSigner/RemoteSignature.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
